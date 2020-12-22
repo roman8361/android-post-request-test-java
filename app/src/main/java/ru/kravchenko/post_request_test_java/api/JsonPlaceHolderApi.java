@@ -30,4 +30,7 @@ public interface JsonPlaceHolderApi {
     @POST("hello")
     Call<ResponseMobileDto> createPostMobile(@Body RequestMobileDto requestMobileDto);
 
+    @POST("activateCodeUrl")
+    Call<ResponseMobileDto> createPostMobileActivateCode(@Body RequestMobileDto requestMobileDto);
+
 }

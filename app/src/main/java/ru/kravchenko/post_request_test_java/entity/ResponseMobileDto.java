@@ -6,7 +6,9 @@ import java.util.Date;
 
 public class ResponseMobileDto {
 
-    private String guestName;
+    private String firstName;
+
+    private String secondName;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSXXX")
     private Date departureDate;
@@ -15,13 +17,6 @@ public class ResponseMobileDto {
 
     private String metaMessage;
 
-    public String getGuestName() {
-        return guestName;
-    }
-
-    public void setGuestName(String guestName) {
-        this.guestName = guestName;
-    }
 
     public Date getDepartureDate() {
         return departureDate;
@@ -45,6 +40,22 @@ public class ResponseMobileDto {
 
     public void setMetaMessage(String metaMessage) {
         this.metaMessage = metaMessage;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
 }
